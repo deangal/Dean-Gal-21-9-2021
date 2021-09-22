@@ -1,0 +1,28 @@
+@import "../../global.scss";
+.intro {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+  }
+}
+
+.intro.activeDay {
+  background-image: url("https://images.pexels.com/photos/695657/pexels-photo-695657.jpeg?cs=srgb&dl=pexels-johann-piber-695657.jpg&fm=jpg"); // clear
+}
+
+.intro.activeNight {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/05/13/12/dark-2583481_1280.jpg"); // night
+}
