@@ -54,9 +54,5 @@ export const getGeo = (GeoData) => {
         payload: GeoData
     }
 }
-export const login = () => {
-    return{
-        type: 'SIGN_IN'
-    }
-}
+
 
